@@ -14,4 +14,13 @@ document.onkeydown = function(e) {
         return false;
     }
 };
+
+var devtools = /./;
+devtools.toString = function() {
+    window.location.href = "https://wikifur.com/"; // Redirect or alert
+};
+
+setInterval(function() {
+    console.log(devtools);
+}, 100); 
 </script>
